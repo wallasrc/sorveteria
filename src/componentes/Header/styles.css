@@ -1,0 +1,42 @@
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #F9DB79;
+    position: fixed;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.header img {
+    width: 60px;
+}
+
+.header a {
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (max-width:436px) {
+    header {
+        height: 110px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header nav {
+        width: 100%;
+        border-top: 1px solid grey;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
